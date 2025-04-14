@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本自动生成</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="define" class="define">
+        <div id="d_form">
+            <div id="email">
+                <input type="text" id="changeEmail" placeholder="@+">
+                <label for="changeEmail">修改邮箱后缀</label>
+            </div>
+            <div id="copyRight">
+                <input type="text" id="changeCopyRight">
+                <label for="changeCopyRight">修改版权信息</label>
+
+            </div>
+            <button id="submit">提交</button>
+        </div>
+
+    </div>
+    <div id="root">
+        <div class="list">
+
+            <div id="top">
+                <h3>选项</h3>
+                <button class="mydefine" id="change">自定义信息</button>
+            </div>
+
+            <hr />
+            <div class="item">
+                <input type="checkbox">
+                <span>去空格</span>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <span>转化为小写</span>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <span>添加邮箱后缀</span>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <span>添加版权信息</span>
+            </div>
+
+        </div>
+        <div class="container">
+            <h1>文本自动生成器</h1>
+            <input type="text" id="emailInput" placeholder="请输入">
+            <button id="validateButton">生成</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="./js/compose.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
